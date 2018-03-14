@@ -24,6 +24,8 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+    
 	self.upnp = [[PLT_UPnPObject alloc] init];
 
 	// create server and add ourselves as the delegate
@@ -49,21 +51,25 @@
 
 - (NPT_Result)onBrowseMetadata:(PLT_MediaServerBrowseCapsule*)info
 {
+    NSLog(@"%@",info.objectId);
 	return NPT_FAILURE;
 }
 
 - (NPT_Result)onBrowseDirectChildren:(PLT_MediaServerBrowseCapsule*)info
 {
+    NSLog(@"%@",info.objectId);
 	return NPT_FAILURE;
 }
 
 - (NPT_Result)onSearchContainer:(PLT_MediaServerSearchCapsule*)info
 {
+    NSLog(@"%@",info.objectId);
 	return NPT_FAILURE;
 }
 
 - (NPT_Result)onFileRequest:(PLT_MediaServerFileRequestCapsule*)info
 {
+    NSLog(@"%@",info);
 	return NPT_FAILURE;
 }
 

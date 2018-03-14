@@ -185,7 +185,7 @@
         NSInteger answer = [alert runModal];
         alert = nil;
         
-        if (answer == NSAlertAlternateReturn) return NSTerminateCancel;
+        if (answer == NSAlertFirstButtonReturn) return NSTerminateCancel;
 
     }
 

@@ -77,6 +77,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		34E2ABCB205918370073FEA5 /* Platinum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41016211ACFA826000E994F /* Platinum.framework */; };
+		34E2ABCC205918370073FEA5 /* Platinum.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41016211ACFA826000E994F /* Platinum.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34E2ABCE2059186F0073FEA5 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E2ABCD2059186F0073FEA5 /* Neptune.framework */; };
+		34E2ABD0205918BE0073FEA5 /* Neptune.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E2ABCD2059186F0073FEA5 /* Neptune.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E410161A1ACFA761000E994F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41016181ACFA761000E994F /* LaunchScreen.xib */; };
 		E410161B1ACFA761000E994F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41016191ACFA761000E994F /* Main.storyboard */; };
 		E41016261ACFA826000E994F /* Platinum.h in Headers */ = {isa = PBXBuildFile; fileRef = E41016251ACFA826000E994F /* Platinum.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -327,12 +331,11 @@
 		E45BD1F71FC95BFC00F1D812 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40616C01ADE5C9A008BDAEB /* Neptune.framework */; };
 		E48EAA811AF1EDD800D9EDC0 /* Neptune.h in Headers */ = {isa = PBXBuildFile; fileRef = E48EAA801AF1EDD800D9EDC0 /* Neptune.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48EAA821AF1EDD800D9EDC0 /* Neptune.h in Headers */ = {isa = PBXBuildFile; fileRef = E48EAA801AF1EDD800D9EDC0 /* Neptune.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B2A5A71FC90AE500C891D7 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44E2B8D1AE7622F0092347B /* Neptune.framework */; };
 		F3031E961DF1BF6400C5B803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3031E8C1DF1BF6400C5B803 /* LaunchScreen.storyboard */; };
 		F3031E971DF1BF6400C5B803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3031E8E1DF1BF6400C5B803 /* Main.storyboard */; };
-		F3031E981DF1BF6400C5B803 /* MobileMediaController-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3031E901DF1BF6400C5B803 /* MobileMediaController-Info.plist */; };
 		F3031EA21DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */; };
 		F3031EA31DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */; };
-		E4B2A5A71FC90AE500C891D7 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44E2B8D1AE7622F0092347B /* Neptune.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -578,6 +581,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				34E2ABD0205918BE0073FEA5 /* Neptune.framework in Embed Frameworks */,
+				34E2ABCC205918370073FEA5 /* Platinum.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +590,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34E2ABCD2059186F0073FEA5 /* Neptune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Neptune.framework; path = ../../../Carthage/Build/iOS/Neptune.framework; sourceTree = "<group>"; };
 		E402C7541297CECB00565B76 /* ContentDirectorySCPD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentDirectorySCPD.cpp; sourceTree = "<group>"; };
 		E40616C01ADE5C9A008BDAEB /* Neptune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Neptune.framework; path = ../../../Carthage/Build/iOS/Neptune.framework; sourceTree = "<group>"; };
 		E40C699E11E6ED710024CAD4 /* PltFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PltFrameBuffer.cpp; sourceTree = "<group>"; };
@@ -746,7 +752,6 @@
 		E4CB6A441640354E002478B0 /* CHANGELOG.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CHANGELOG.txt; path = ../../../CHANGELOG.txt; sourceTree = "<group>"; };
 		E4CB6A451640354E002478B0 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE.txt; path = ../../../LICENSE.txt; sourceTree = "<group>"; };
 		E4F7E9060FE4B12A00BEDFA6 /* PltIconsData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltIconsData.cpp; path = ../../../Source/Core/PltIconsData.cpp; sourceTree = SOURCE_ROOT; };
-		F3031E861DF1BF2100C5B803 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3031E891DF1BF6400C5B803 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3031E8D1DF1BF6400C5B803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3031E8F1DF1BF6400C5B803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -900,6 +905,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E2ABCE2059186F0073FEA5 /* Neptune.framework in Frameworks */,
+				34E2ABCB205918370073FEA5 /* Platinum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +916,7 @@
 		08FB7794FE84155DC02AAC07 /* Platinum */ = {
 			isa = PBXGroup;
 			children = (
+				34E2ABCD2059186F0073FEA5 /* Neptune.framework */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				E44470B312C31B5900E01480 /* Resources */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
@@ -1089,7 +1097,6 @@
 		E4294C5F14319C9400B6FDED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3031E861DF1BF2100C5B803 /* UIKit.framework */,
 				E44E2B8D1AE7622F0092347B /* Neptune.framework */,
 				E40616C01ADE5C9A008BDAEB /* Neptune.framework */,
 				E48F8A9E1632026F009E46A5 /* Foundation.framework */,
@@ -1809,19 +1816,22 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					E41016201ACFA826000E994F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TJ3MHGEZF4;
 					};
 					E44E2BD01AE775510092347B = {
 						CreatedOnToolsVersion = 6.3;
 					};
 					E45332AC1AAED318004A52FD = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TJ3MHGEZF4;
 					};
 					F305D4A61DF06BCA00301D24 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TJ3MHGEZF4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1904,7 +1914,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3031E981DF1BF6400C5B803 /* MobileMediaController-Info.plist in Resources */,
 				F3031E971DF1BF6400C5B803 /* Main.storyboard in Resources */,
 				F3031E961DF1BF6400C5B803 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -2190,9 +2199,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3031EA31DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */,
-				F3031E9A1DF1BF6400C5B803 /* ViewController.m in Sources */,
-				F3031E991DF1BF6400C5B803 /* main.m in Sources */,
-				F3031E9D1DF1C10000C5B803 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2390,15 +2396,21 @@
 		1DEB91F108733DB70010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2469,6 +2481,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2530,6 +2543,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -3337,7 +3351,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Carthage/Build/Mac",
-					/Users/sylvain/dev/Plutinosoft/Platinum/Carthage/Build/Mac,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3353,7 +3366,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../Carthage/Build/Mac/Neptune.framework/Headers",
 				);
 				INFOPLIST_FILE = Platinum/Info.plist;
@@ -3396,7 +3408,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Carthage/Build/Mac",
-					/Users/sylvain/dev/Plutinosoft/Platinum/Carthage/Build/Mac,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -3409,7 +3420,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../Carthage/Build/Mac/Neptune.framework/Headers",
 				);
 				INFOPLIST_FILE = Platinum/Info.plist;
@@ -3460,6 +3470,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3509,6 +3520,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3563,15 +3575,21 @@
 		E46270E90F81F4F8007FE869 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -3647,8 +3665,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../Carthage/Build/iOS;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -3664,7 +3684,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/../../../Source/Apps/MobileMediaController/MobileMediaController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.MobileMediaController;
@@ -3696,8 +3716,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TJ3MHGEZF4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../Carthage/Build/iOS;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -3708,7 +3730,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/../../../Source/Apps/MobileMediaController/MobileMediaController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.MobileMediaController;
