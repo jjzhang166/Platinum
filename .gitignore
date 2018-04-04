@@ -6,3 +6,5 @@ xcuserdata
 *.pyc
 .scons*
 */**/.DS_Store
+.DS_Store
+xcshareddata/
