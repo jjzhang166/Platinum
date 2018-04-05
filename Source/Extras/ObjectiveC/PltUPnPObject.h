@@ -19,6 +19,7 @@
 typedef struct PLT_UPnP PLT_UPnP;
 typedef struct PLT_Action PLT_Action;
 typedef struct PLT_DeviceHostReference PLT_DeviceHostReference;
+typedef struct PLT_CtrlPointReference  PLT_CtrlPointReferencel;
 #endif
 
 /*----------------------------------------------------------------------
@@ -47,6 +48,18 @@ typedef struct PLT_DeviceHostReference PLT_DeviceHostReference;
 @end
 
 /*----------------------------------------------------------------------
+ |   PLT_CtrlPointObject
+ +---------------------------------------------------------------------*/
+@interface PLT_CtrlPointObject: NSObject {
+@private
+    PLT_CtrlPointReference* ctrlPoint;
+}
+
+- (void)setCtrlPoint:(PLT_CtrlPointReference*)_ctrlPoint;
+- (PLT_CtrlPointReference&)getCtrlPoint;
+@end
+
+/*----------------------------------------------------------------------
 |   PLT_UPnPObject
 +---------------------------------------------------------------------*/
 @interface PLT_UPnPObject : NSObject
@@ -57,5 +70,8 @@ typedef struct PLT_DeviceHostReference PLT_DeviceHostReference;
 
 - (NPT_Result)addDevice:(PLT_DeviceHostObject*)device;
 - (NPT_Result)removeDevice:(PLT_DeviceHostObject*)device;
+
+- (NPT_Result)addCtrlPoint:(PLT_CtrlPointObject*)ctrlPoint;
+- (NPT_Result)removeCtrlPoint:(PLT_CtrlPointObject*)ctrlPoint;
 
 @end

@@ -63,6 +63,36 @@
 @end
 
 /*----------------------------------------------------------------------
+ |   PLT_CtrlPointObject
+ +---------------------------------------------------------------------*/
+@implementation PLT_CtrlPointObject
+
+- (id)init
+{
+    if(self = [super init]){
+    }
+    return self;
+}
+
+- (void)setCtrlPoint:(PLT_CtrlPointReference *)_ctrlPoint
+{
+    delete ctrlPoint;
+    ctrlPoint = new PLT_CtrlPointReference(*_ctrlPoint);
+}
+
+
+- (void)dealloc
+{
+    delete ctrlPoint;
+}
+
+- (PLT_CtrlPointReference&)getCtrlPoint
+{
+    return *ctrlPoint;
+}
+@end
+
+/*----------------------------------------------------------------------
 |   PLT_UPnPObject
 +---------------------------------------------------------------------*/
 
@@ -115,4 +145,13 @@
     return _upnp->RemoveDevice([device getDevice]);
 }
 
+- (NPT_Result)addCtrlPoint:(PLT_CtrlPointObject *)ctrlPoint
+{
+    return _upnp->AddCtrlPoint([ctrlPoint getCtrlPoint]);
+}
+
+- (NPT_Result)removeCtrlPoint:(PLT_CtrlPointObject *)ctrlPoint
+{
+    return _upnp->RemoveCtrlPoint([ctrlPoint getCtrlPoint]);
+}
 @end

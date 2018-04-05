@@ -63,7 +63,7 @@ int main(void)
     PLT_UPnP upnp;
 
     // Create control point
-    PLT_CtrlPointReference ctrlPoint(new PLT_CtrlPoint());
+    PLT_CtrlPointReference ctrlPoint(new PLT_CtrlPoint()); 
 
     // Create controller
     PLT_MicroMediaController controller(ctrlPoint);

@@ -83,7 +83,7 @@
 		34E2ABD0205918BE0073FEA5 /* Neptune.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E2ABCD2059186F0073FEA5 /* Neptune.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34EB3A8F2074CB160003CAC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E9C1DF1C10000C5B803 /* AppDelegate.m */; };
 		34EB3A902074CB160003CAC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E911DF1BF6400C5B803 /* main.m */; };
-		34EB3A912074CB160003CAC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E931DF1BF6400C5B803 /* ViewController.m */; };
+		34EB3A912074CB160003CAC4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031E931DF1BF6400C5B803 /* ViewController.mm */; };
 		E410161A1ACFA761000E994F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41016181ACFA761000E994F /* LaunchScreen.xib */; };
 		E410161B1ACFA761000E994F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41016191ACFA761000E994F /* Main.storyboard */; };
 		E41016261ACFA826000E994F /* Platinum.h in Headers */ = {isa = PBXBuildFile; fileRef = E41016251ACFA826000E994F /* Platinum.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -330,7 +330,7 @@
 		E44E2C071AE779990092347B /* Platinum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44E2B8B1AE761220092347B /* Platinum.framework */; };
 		E45332B21AAED318004A52FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45332B11AAED318004A52FD /* main.m */; };
 		E45332B51AAED318004A52FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45332B41AAED318004A52FD /* AppDelegate.m */; };
-		E45332B81AAED318004A52FD /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45332B71AAED318004A52FD /* ViewController.mm */; };
+		E45332B81AAED318004A52FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45332B71AAED318004A52FD /* ViewController.m */; };
 		E45BD1F71FC95BFC00F1D812 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40616C01ADE5C9A008BDAEB /* Neptune.framework */; };
 		E48EAA811AF1EDD800D9EDC0 /* Neptune.h in Headers */ = {isa = PBXBuildFile; fileRef = E48EAA801AF1EDD800D9EDC0 /* Neptune.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48EAA821AF1EDD800D9EDC0 /* Neptune.h in Headers */ = {isa = PBXBuildFile; fileRef = E48EAA801AF1EDD800D9EDC0 /* Neptune.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -339,7 +339,8 @@
 		F3031E971DF1BF6400C5B803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3031E8E1DF1BF6400C5B803 /* Main.storyboard */; };
 		F3031EA21DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */; };
 		F3031EA31DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */; };
-		E4B2A5A71FC90AE500C891D7 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44E2B8D1AE7622F0092347B /* Neptune.framework */; };
+		F375B0EA207631400057FA9C /* AnotherViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F375B0E9207631400057FA9C /* AnotherViewController.mm */; };
+		F375B0EB207632040057FA9C /* AnotherViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F375B0E9207631400057FA9C /* AnotherViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -735,7 +736,7 @@
 		E45332B31AAED318004A52FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E45332B41AAED318004A52FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E45332B61AAED318004A52FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E45332B71AAED318004A52FD /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		E45332B71AAED318004A52FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E477694512A9C00E0011EEE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E48D4D8F13B51BAC00359E06 /* PltProtocolInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltProtocolInfo.cpp; path = ../../../Source/Core/PltProtocolInfo.cpp; sourceTree = SOURCE_ROOT; };
 		E48D4D9013B51BAC00359E06 /* PltProtocolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltProtocolInfo.h; path = ../../../Source/Core/PltProtocolInfo.h; sourceTree = SOURCE_ROOT; };
@@ -762,12 +763,14 @@
 		F3031E901DF1BF6400C5B803 /* MobileMediaController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MobileMediaController-Info.plist"; sourceTree = "<group>"; };
 		F3031E911DF1BF6400C5B803 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3031E921DF1BF6400C5B803 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3031E931DF1BF6400C5B803 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3031E931DF1BF6400C5B803 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		F3031E9C1DF1C10000C5B803 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F3031EA01DF1C36000C5B803 /* PltMediaControllerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltMediaControllerObject.h; sourceTree = "<group>"; };
 		F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltMediaControllerObject.mm; sourceTree = "<group>"; };
 		F305D4A71DF06BCA00301D24 /* MobileMediaController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMediaController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F305D4D11DF07BDA00301D24 /* MobileMediaServer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MobileMediaServer-Info.plist"; path = "../../../Source/Apps/MobileMediaServer/MobileMediaServer-Info.plist"; sourceTree = "<group>"; };
+		F375B0E8207631400057FA9C /* AnotherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
+		F375B0E9207631400057FA9C /* AnotherViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AnotherViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1381,7 +1384,7 @@
 				E45332B31AAED318004A52FD /* AppDelegate.h */,
 				E45332B41AAED318004A52FD /* AppDelegate.m */,
 				E45332B61AAED318004A52FD /* ViewController.h */,
-				E45332B71AAED318004A52FD /* ViewController.mm */,
+				E45332B71AAED318004A52FD /* ViewController.m */,
 			);
 			name = MobileMediaServer;
 			path = ../../../Source/Apps/MobileMediaServer;
@@ -1403,7 +1406,9 @@
 				F3031E9C1DF1C10000C5B803 /* AppDelegate.m */,
 				F3031E911DF1BF6400C5B803 /* main.m */,
 				F3031E921DF1BF6400C5B803 /* ViewController.h */,
-				F3031E931DF1BF6400C5B803 /* ViewController.m */,
+				F3031E931DF1BF6400C5B803 /* ViewController.mm */,
+				F375B0E8207631400057FA9C /* AnotherViewController.h */,
+				F375B0E9207631400057FA9C /* AnotherViewController.mm */,
 			);
 			name = MobileMediaController;
 			path = ../../../Source/Apps/MobileMediaController;
@@ -2041,6 +2046,7 @@
 			files = (
 				E42D3AC40FDC87300045379C /* MediaCrawler.cpp in Sources */,
 				E42D3AC50FDC87310045379C /* main.cpp in Sources */,
+				F375B0EA207631400057FA9C /* AnotherViewController.mm in Sources */,
 				F3031EA21DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2192,7 +2198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45332B81AAED318004A52FD /* ViewController.mm in Sources */,
+				E45332B81AAED318004A52FD /* ViewController.m in Sources */,
 				E45332B51AAED318004A52FD /* AppDelegate.m in Sources */,
 				E45332B21AAED318004A52FD /* main.m in Sources */,
 			);
@@ -2202,9 +2208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F375B0EB207632040057FA9C /* AnotherViewController.mm in Sources */,
 				34EB3A8F2074CB160003CAC4 /* AppDelegate.m in Sources */,
 				34EB3A902074CB160003CAC4 /* main.m in Sources */,
-				34EB3A912074CB160003CAC4 /* ViewController.m in Sources */,
+				34EB3A912074CB160003CAC4 /* ViewController.mm in Sources */,
 				F3031EA31DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2403,8 +2410,8 @@
 		1DEB91F108733DB70010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -3582,8 +3589,8 @@
 		E46270E90F81F4F8007FE869 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
