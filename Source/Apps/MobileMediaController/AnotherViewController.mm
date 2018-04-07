@@ -53,5 +53,19 @@ NPT_LogManager::GetDefault().Configure("plist:.level=INFO;.handlers=ConsoleHandl
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - PLT_MediaControllerObject
 
+-(bool)OnMRAdded:(PLT_DeviceDataObject *)device {
+    
+    NSLog(@"add device");
+    return true;
+}
+
+- (void)OnMRRemoved:(PLT_DeviceDataObject *)device {
+    NSLog(@"remove device");
+}
+
+- (void)OnMRStateVariablesChanged:(PLT_ServiceObject *)service StateVariables:(NSArray<PLT_StateVariableObject *> *)vars {
+    NSLog(@"device state changed");
+}
 @end
