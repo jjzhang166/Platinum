@@ -29,7 +29,7 @@
 @implementation PLT_ServiceObject
 -(instancetype)initWithService:(PLT_Service *)service {
     if(self = [super init]) {
-        
+        service->GetDevice();
         
     }
     return self;
@@ -39,7 +39,7 @@
 @implementation PLT_StateVariableObject
 -(instancetype)initWithStateVariable:(PLT_StateVariable *)stateVariable {
     if(self = [super init]) {
-        
+        stateVariable->GetName();
     }
     return self;
 }

@@ -236,6 +236,7 @@ private:
 - (instancetype)init {
     
     if(self = [super init]) {
+    NPT_LogManager::GetDefault().Configure("plist:.level=INFO;.handlers=ConsoleHandler;.ConsoleHandler.colors=off;.ConsoleHandler.filter=24");
         
         _upnp = [[PLT_UPnPObject alloc] init];
         
