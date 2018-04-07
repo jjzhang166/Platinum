@@ -10,25 +10,40 @@
 #import "AnotherViewController.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) UILabel *hintLabel;
 @end
 
 @implementation ViewController
+-(UILabel *)hintLabel {
+    if(_hintLabel == nil) {
+        _hintLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 100)];
+        _hintLabel.textColor = [UIColor redColor];
+        _hintLabel.font = [UIFont boldSystemFontOfSize:18];
+        _hintLabel.center = self.view.center;
+        _hintLabel.textAlignment = NSTextAlignmentCenter;
+        _hintLabel.text = @"点击右上方搜索设备";
+    }
+    return _hintLabel;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, 0, 50, 50);
-    btn.backgroundColor = UIColor.redColor;
-    [btn addTarget:self action:@selector(pressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    btn.center = self.view.center;
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIBarButtonItem *findDeviceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(pressed:)];
+    
+    self.navigationItem.rightBarButtonItem = findDeviceItem;
+    
+    self.title = @"DLNA DMC Demo";
+    
+    [self.view addSubview:self.hintLabel];
 }
 
 -(void)pressed:(UIButton *)sender {
     AnotherViewController *vc = [[AnotherViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

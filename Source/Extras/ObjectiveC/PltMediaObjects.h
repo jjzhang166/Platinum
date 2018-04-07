@@ -9,6 +9,13 @@
 #import "Platinum.h"
 
 @interface PLT_DeviceDataObject : NSObject
+
+@property (nonatomic, strong) NSURL* description_url;
+@property (nonatomic, copy  ) NSString *uuid;
+@property (nonatomic, assign) NSTimeInterval lease_time;
+@property (nonatomic, copy  ) NSString *device_type;
+@property (nonatomic, copy  ) NSString *friendly_name;
+
 -(instancetype)initWithDevice:(PLT_DeviceDataReference &)deviceData;
 @end
 
@@ -19,3 +26,8 @@
 @interface PLT_StateVariableObject: NSObject
 -(instancetype)initWithStateVariable:(PLT_StateVariable*)stateVariable;
 @end
+
+
+@interface NSString(NPT_String)
++(NSString *)fromNPT_String:(NPT_String)string;
+@end;
