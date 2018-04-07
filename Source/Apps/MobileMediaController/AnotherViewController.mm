@@ -8,7 +8,6 @@
 #import "AnotherViewController.h"
 #import "PltMediaControllerObject.h"
 #import <Neptune/Neptune.h>
-#import <Foundation/Foundation.h>
 
 @interface AnotherViewController ()<PLT_MediaControllerDelegateObject,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) PLT_MediaControllerObject *controller;
@@ -34,7 +33,7 @@
 }
 
 + (void)initialize {
-NPT_LogManager::GetDefault().Configure("plist:.level=INFO;.handlers=ConsoleHandler;.ConsoleHandler.outputs=1;.ConsoleHandler.filter=61");
+    NPT_LogManager::GetDefault().Configure("plist:.level=INFO;.handlers=ConsoleHandler;.ConsoleHandler.outputs=1;.ConsoleHandler.filter=61");
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -110,21 +109,27 @@ NPT_LogManager::GetDefault().Configure("plist:.level=INFO;.handlers=ConsoleHandl
     // Pass the selected object to the new view controller.
 }
 */
+-(void)updateTableView {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+}
 #pragma mark - PLT_MediaControllerObject
 
 -(bool)OnMRAdded:(PLT_DeviceDataObject *)device {
 
     [self.devices addObject:device];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
+    [self updateTableView];
     
     return true;
 }
 
 - (void)OnMRRemoved:(PLT_DeviceDataObject *)device {
     NSLog(@"remove device");
+    
+    [self.devices removeObject:device];
+    [self updateTableView];
 }
 
 - (void)OnMRStateVariablesChanged:(PLT_ServiceObject *)service StateVariables:(NSArray<PLT_StateVariableObject *> *)vars {

@@ -83,7 +83,7 @@
 		34E2ABD0205918BE0073FEA5 /* Neptune.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E2ABCD2059186F0073FEA5 /* Neptune.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34EB3A8F2074CB160003CAC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E9C1DF1C10000C5B803 /* AppDelegate.m */; };
 		34EB3A902074CB160003CAC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E911DF1BF6400C5B803 /* main.m */; };
-		34EB3A912074CB160003CAC4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3031E931DF1BF6400C5B803 /* ViewController.mm */; };
+		34EB3A912074CB160003CAC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3031E931DF1BF6400C5B803 /* ViewController.m */; };
 		E410161A1ACFA761000E994F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41016181ACFA761000E994F /* LaunchScreen.xib */; };
 		E410161B1ACFA761000E994F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41016191ACFA761000E994F /* Main.storyboard */; };
 		E41016261ACFA826000E994F /* Platinum.h in Headers */ = {isa = PBXBuildFile; fileRef = E41016251ACFA826000E994F /* Platinum.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -765,7 +765,7 @@
 		F3031E901DF1BF6400C5B803 /* MobileMediaController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MobileMediaController-Info.plist"; sourceTree = "<group>"; };
 		F3031E911DF1BF6400C5B803 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3031E921DF1BF6400C5B803 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3031E931DF1BF6400C5B803 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F3031E931DF1BF6400C5B803 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F3031E9C1DF1C10000C5B803 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F3031EA01DF1C36000C5B803 /* PltMediaControllerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltMediaControllerObject.h; sourceTree = "<group>"; };
 		F3031EA11DF1C36000C5B803 /* PltMediaControllerObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltMediaControllerObject.mm; sourceTree = "<group>"; };
@@ -1412,7 +1412,7 @@
 				F3031E9C1DF1C10000C5B803 /* AppDelegate.m */,
 				F3031E911DF1BF6400C5B803 /* main.m */,
 				F3031E921DF1BF6400C5B803 /* ViewController.h */,
-				F3031E931DF1BF6400C5B803 /* ViewController.mm */,
+				F3031E931DF1BF6400C5B803 /* ViewController.m */,
 				F375B0E8207631400057FA9C /* AnotherViewController.h */,
 				F375B0E9207631400057FA9C /* AnotherViewController.mm */,
 			);
@@ -2219,7 +2219,7 @@
 				F375B0EB207632040057FA9C /* AnotherViewController.mm in Sources */,
 				34EB3A8F2074CB160003CAC4 /* AppDelegate.m in Sources */,
 				34EB3A902074CB160003CAC4 /* main.m in Sources */,
-				34EB3A912074CB160003CAC4 /* ViewController.mm in Sources */,
+				34EB3A912074CB160003CAC4 /* ViewController.m in Sources */,
 				F3031EA31DF1C36000C5B803 /* PltMediaControllerObject.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
